@@ -15,7 +15,7 @@ pipeline{
     post{
         always{
             bat 'docker-compose -f grid.yaml down'
-            bat 'docker-compose -f grid.yaml down'
+            bat 'docker-compose -f test-suites.yaml down'
         }
     }
 }
